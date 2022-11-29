@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyD-poXcKFI8CcgkgTaCuW92WnIgiVCHPIo",
+            authDomain: "servidores2022-e90e8.firebaseapp.com",
+            databaseURL: "https://servidores2022-e90e8-default-rtdb.firebaseio.com",
+            projectId: "servidores2022-e90e8",
+            storageBucket: "servidores2022-e90e8.appspot.com",
+            messagingSenderId: "428475953976",
+            appId: "1:428475953976:web:31f674f3899db1636a47cd",
+            measurementId: "G-5Y73B9SGP8"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="consulta1.js"></script>
+
+    </head>
+
+    <body>
+        <a href="Index.html"> <img class="hotel-generic" src="HOTEL.png"> </a>
+        <h3 class="namefield"> Hospedes </h3>
+        <div class="buttons-htmls">
+            <a href="quartos.html"><button class="bedroom-btn">Quartos</button></a>
+            <a href="hospedes.html"><button class="hospedes-btn">Hospedes</button></a>
+    </div>
+        <table id="tbhospedes" class="table table-striped table-hover table-bordered table-dark table-responsive">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Quarto</th>
+                <th>Telefone</th>
+            </tr>
+        </table>
+    </body>
+</html>
+<style>
+    body {
+        margin: auto;
+        background: #191B21;
+    }
+    .hotel-generic {
+        margin: auto;
+        display: flex;
+        width: 120px;
+    }
+    .namefield {
+        color: #b9131d;
+        text-align: center;
+        font-weight: bold;
+    }
+    .buttons-htmls {
+        padding: 5px 20px;
+        border: none;
+        border-radius: 30px;
+        background: none;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+    }
+    .bedroom-btn {
+        padding-top: 5px;
+        border: none;
+        padding: 8px 24px;
+        margin-right: 15px;
+        border-radius: 20px;
+        background: #b9131d;
+        color: aliceblue;
+        font-family: Franklin Gothic Medium;
+        font-weight: bold;
+        box-shadow: 0px 5px 30px #b9131d;
+        cursor: pointer;
+    }
+    table {
+        margin-top: 30px;
+    }
+    .hospedes-btn {
+        padding-top: 5px;
+        border: none;
+        padding: 8px 24px;
+        border-radius: 20px;
+        background: #b9131d;
+        color: aliceblue;
+        font-family: Franklin Gothic Medium;
+        font-weight: bold;
+        box-shadow: 0px 5px 30px #b9131d;
+        cursor: pointer;
+    }
+</style>
